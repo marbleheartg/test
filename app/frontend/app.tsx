@@ -33,7 +33,7 @@ export default function App() {
   }, [])
 
   return (
-    <div onDragStart={e => e.preventDefault()}>
+    <div>
       <Providers>
         <BrowserRouter>
           <Header />
