@@ -17,12 +17,10 @@ const Header = () => {
       </div>
 
       <button className={clsx("p-1 px-2.5 pb-1.5", "border rounded-full", "cursor-pointer")} onClick={() => open({ view: "Connect" })}>
-        connect
+        {isConnected ? address?.slice(0, 6) : "connect"}
       </button>
 
-      <span>{isConnected}</span>
-      <span>{address}</span>
-      <span>{caipAddress}</span>
+      <span>{caipAddress?.slice(0, 20)}</span>
     </header>
   )
 }
