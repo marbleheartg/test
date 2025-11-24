@@ -41,11 +41,13 @@ const Ad = () => {
       )}
     >
       <div className="w-12 h-1 bg-white rounded-full mb-4"></div>
-      <img className="max-w-full max-h-1/2" src="https://placehold.co/600x400" alt="ad-image" />
+      {/* <img className="max-w-full max-h-1/2" src="https://placehold.co/600x400" alt="ad-image" /> */}
+      <img className="max-w-full max-h-1/2" src="https://monad-flowers.xyz/images/og/hero.jpg" alt="ad-image" />
+
       <div>try this awesome mini app</div>
       <a
-        href="https://google.com"
-        target="_blank"
+        href="https://farcaster.xyz/marbleheart"
+        // target="_blank"
         className={clsx("px-3 py-1 border rounded-xl", "cursor-pointer", "z-10")}
         onClick={() => setV(false)}
       >
